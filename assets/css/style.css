@@ -1,3 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
 .tabloid {
   background-color: rgba(89, 220, 126, 0.63);
   color: rgb(42, 90, 63);
@@ -97,4 +105,204 @@
   max-width: 750px;
   text-align: center;
   color: rgb(42, 90, 63);
+}
+.mob {
+  width: 450px;
+  height: 380px;
+  padding: 20px;
+}
+.tax {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 1000px;
+  background-color: rgba(133, 235, 162, 0.63);
+  border-radius: 20px;
+  margin: 150px;
+}
+.buttax {
+  width: 110px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  transition: background-color 0.5s;
+  color: rgb(0, 0, 0);
+  margin-top: 40px;
+  border: 0px;
+}
+.buttax:hover {
+  background-color: rgba(89, 220, 126, 0.63);
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+.taxtext {
+  color: rgb(42, 90, 63);
+  font-size: 19px;
+  padding-top: 25px;
+  padding-left: 10px;
+}
+h2 {
+  font-size: 40px;
+}
+
+.mobtwo {
+  width: 450px;
+  height: 380px;
+  padding: 20px;
+}
+.taxone {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgba(133, 235, 162, 0.63);
+  border-radius: 20px;
+  padding-left: 40px;
+  margin-right: 180px;
+  justify-self: end;
+  width: 1000px;
+}
+.buttax {
+  width: 110px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  transition: background-color 0.5s;
+  color: rgb(0, 0, 0);
+  margin-top: 40px;
+  border: 0px;
+}
+.buttax:hover {
+  background-color: rgba(89, 220, 126, 0.63);
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+.taxtextone {
+  color: rgb(42, 90, 63);
+  font-size: 19px;
+  padding-top: 25px;
+}
+.mobone {
+  width: 450px;
+  height: 380px;
+  padding: 20px;
+}
+.taxtwo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 1000px;
+
+  background-color: rgba(133, 235, 162, 0.63);
+  border-radius: 20px;
+  margin: 150px;
+}
+.buttax {
+  width: 110px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  transition: background-color 0.5s;
+  color: rgb(0, 0, 0);
+  margin-top: 40px;
+  border: 0px;
+}
+.buttax:hover {
+  background-color: rgba(89, 220, 126, 0.63);
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+.taxtexttwo {
+  color: rgb(42, 90, 63);
+  font-size: 19px;
+  padding-top: 25px;
+}
+.container {
+  display: grid;
+  justify-self: center;
+  width: 800px;
+  grid-template-columns: 200px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+/* скрываю radio */
+input[type="radio"] {
+  display: none;
+}
+
+
+.buttons label {
+  display: block;
+  padding: 10px;
+  height: 70px;
+  width: 200px;
+  padding-top: 25px;
+  background: #ffffff;
+  color: #014717;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  
+}
+
+.buttons label:hover {
+  background: #3d6d3d;
+  color: white;
+}
+
+/* скрываем все отзывы */
+.review {
+  display: none;
+  animation: fadeIn 0.5s;
+  color: rgb(42, 90, 63);
+  font-size: 20px;
+}
+
+/* показываем нужный отзыв */
+#r1:checked ~ .reviews #rev1 {
+  display: block;
+}
+#r2:checked ~ .reviews #rev2 {
+  display: block;
+}
+#r3:checked ~ .reviews #rev3 {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hearzag {
+  text-align: center;
+  font-size: 70px;
+  color: rgb(42, 90, 63);
+  margin-top: 50px;
+}
+
+.ava {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.prof {
+  font-size: 18px;
+  
+}
+
+.laptop{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 100px auto 0 auto;
+}
+.reviews {
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-height: 150px;
+  margin-left: 20px;
 }
